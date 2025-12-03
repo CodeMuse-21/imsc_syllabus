@@ -1,0 +1,307 @@
+:root{
+  --accent: #6b5b95;
+  --muted: #6b7280;
+  --card: rgba(255,255,255,0.9);
+}
+
+/* Pastel background */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial;
+  background: linear-gradient(135deg, #fffaf0 0%, #f0fbff 50%, #f7fff0 100%);
+  color: #111827;
+  min-height: 100vh;
+}
+
+/* Layout */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  padding: 22px;
+  background: linear-gradient(180deg,#f3e9ff 0%, #efeefd 100%);
+  border-right: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 2px 0 12px rgba(100,80,120,0.03);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.brand {
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: var(--accent);
+}
+
+.sem-list {
+  margin-top: 12px;
+}
+
+.sem-item{
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  color:#2b2b2b;
+  transition: background 0.18s, transform 0.12s;
+}
+
+.sem-item:hover{ transform: translateX(4px); background: rgba(107,91,149,0.06); }
+
+.sem-item.active{
+  background: linear-gradient(90deg, rgba(107,91,149,0.15), rgba(107,91,149,0.08));
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Main */
+.main{
+  flex:1;
+  padding: 24px;
+}
+
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.topbar h1{ margin:0; font-size:1.25rem; }
+.program-meta{ color:var(--muted); font-size:0.95rem; }
+
+/* Content */
+.content-area{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.semester-title{
+  margin: 8px 0 18px;
+  color: #333;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+/* Subject card */
+.subject-card {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+}
+
+.subject-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  cursor: pointer;
+}
+
+.subject-header h3{ margin:0; font-size:1rem; color:#1f2937; }
+.subject-meta{ color:var(--muted); font-size:0.9rem; }
+
+.subject-body{ margin-top: 12px; border-top: 1px dashed rgba(0,0,0,0.06); padding-top:12px; }
+
+.module {
+  margin-bottom: 10px;
+}
+
+.module strong{ display:block; margin-bottom:6px; color:#111827; }
+
+.resources a{
+  display:inline-block;
+  margin-right:10px;
+  text-decoration:none;
+  padding:6px 10px;
+  border-radius:8px;
+  border:1px solid rgba(0,0,0,0.06);
+  background: rgba(255,255,255,0.7);
+  font-size:0.9rem;
+  color:var(--accent);
+}
+
+.empty-note { color:var(--muted); font-style:italic; }
+
+/* Responsive */
+@media (max-width:720px){
+  .sidebar{ display:none; }
+  .main{ padding:14px; }
+  .grid{ grid-template-columns: 1fr; }
+}
+
+
+/* --- Layout --- */
+.layout {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  background-color: #fefefe; /* pastel background */
+  overflow: hidden;
+}
+
+/* --- Watermark logo --- */
+.watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px; /* adjust size */
+  height: auto;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.15; /* slightly visible */
+  filter: blur(4px); /* mild blur */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+  width: 220px;
+  background: #1f2937;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 100;
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* --- Overlay --- */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 50;
+}
+
+/* --- Main content --- */
+.main {
+  flex: 1;
+  padding: 25px;
+  position: relative;
+  z-index: 1; /* content above watermark */
+}
+
+/* --- Topbar --- */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+
+.topbar-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #111827;
+}
+
+.program-meta {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* --- Hamburger --- */
+.hamburger {
+  font-size: 26px;
+  background: #10b981;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 200; /* above overlay */
+}
+
+/* --- Semester buttons --- */
+.sem-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sem-item {
+  padding: 10px 14px;
+  text-align: left;
+  border: none;
+  background: #374151;
+  color: #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sem-item:hover {
+  background: #4b5563;
+}
+
+.sem-item.active {
+  background: #10b981;
+  color: white;
+}
+
+/* --- Grid --- */
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* --- Semester Title --- */
+.semester-title h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.semester-title div {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* --- Watermark logo --- */
+.watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px; /* adjust as needed */
+  transform: translate(-50%, -50%);
+  opacity: 0.25; /* slightly more visible */
+  filter: blur(2px); /* mild blur */
+  pointer-events: none;
+  z-index: 0; /* behind all content */
+}

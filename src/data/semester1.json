@@ -1,0 +1,189 @@
+{
+  "semester": 1,
+  "total_credits": 20.5,
+  "courses": [
+    {
+      "code": "MA101",
+      "title": "Calculus-I",
+      "credits": "3-1-0",
+      "modules": {
+        "Module I": [
+          "Successive Differentiation, Leibnitz Theorem.",
+          "Mean Value Theorem: Rolle's, Lagrange's and Cauchy's MVT.",
+          "Taylor & Maclaurin expansions.",
+          "Increasing/decreasing functions, concavity, inflection point, extrema."
+        ],
+        "Module II": [
+          "Curve analysis: Asymptotes, orthogonal curves.",
+          "Curvature and radius of curvature in Cartesian, parametric and polar forms."
+        ],
+        "Module III": [
+          "Functions of several variables, limits, partial derivatives.",
+          "Euler's theorem, implicit and composite derivatives.",
+          "Jacobian, Taylor series for multivariable functions.",
+          "Maxima/minima of several variables, Lagrange multipliers."
+        ],
+        "Module IV": [
+          "Definite integral, reduction formula.",
+          "Differentiation under the integral sign (Leibniz rule).",
+          "Improper integrals, convergence, Beta & Gamma functions."
+        ],
+        "Module V": [
+          "Applications: arc length, areas, volumes, solids of revolution, moments."
+        ]
+      },
+      "resources": {
+        "youtube": "https://www.youtube.com/playlist?list=PLLy_2iUCG87CNafffzNZPVa9rW-QrkOvd",
+        "notes": "https://www.math.brown.edu/johsilva/Calculus.pdf",
+        "question_papers": "https://drive.google.com/drive/folders/1YfW1FhX8O72C7JgYJxxlH0nV9CG-Prev",
+        "books": "https://archive.org/details/CalculusThomas13",
+        "extra": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/"
+      }
+    },
+
+    {
+      "code": "MA102",
+      "title": "Real Analysis",
+      "credits": "3-1-0",
+      "modules": {
+        "Module I": [
+          "Axioms of real numbers, bounds, supremum and infimum.",
+          "Neighborhoods, limit points, open and closed sets."
+        ],
+        "Module II": [
+          "Sequences, limit, limsup/liminf.",
+          "Bolzano–Weierstrass theorem, monotone convergence, Cauchy sequences."
+        ],
+        "Module III": [
+          "Series of positive terms: comparison, root, ratio tests.",
+          "Integral test, alternating series, absolute / conditional convergence."
+        ],
+        "Module IV": [
+          "Sequence and series of functions, pointwise and uniform convergence.",
+          "Weierstrass M-test."
+        ],
+        "Module V": [
+          "Riemann integral, Darboux theorem.",
+          "Mean value theorem of integral calculus, properties, FTC."
+        ]
+      },
+      "resources": {
+        "youtube": "https://www.youtube.com/playlist?list=PLEAYkSg4uSQ3fKOuRF54E0rKEDdFz2JAu",
+        "notes": "https://people.math.ethz.ch/~salamon/PREPRINTS/analysis.pdf",
+        "question_papers": "https://drive.google.com/drive/folders/14Jr8j1qjD8yZ7sRp2YF3NvHwDn92lEfK",
+        "books": "https://archive.org/details/PrinciplesOfMathematicalAnalysisRudin",
+        "extra": "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/"
+      }
+    },
+
+    {
+      "code": "MA109",
+      "title": "Matrix Theory",
+      "credits": "3-1-0",
+      "modules": {
+        "Module I": [
+          "Matrix types, special matrices, properties.",
+          "Partitioned matrices."
+        ],
+        "Module II": [
+          "Elementary operations, E-matrices, rank, normal form.",
+          "System of equations: homogeneous and non-homogeneous."
+        ],
+        "Module III": [
+          "Gaussian elimination, Gauss–Jordan, LU decomposition.",
+          "Linear transformations, matrix representation."
+        ],
+        "Module IV": [
+          "Characteristic equation, eigenvalues/eigenvectors, multiplicity.",
+          "Diagonalization, orthogonal diagonalization, minimal polynomials."
+        ],
+        "Module V": [
+          "Cayley–Hamilton theorem, quadratic forms, positive/negative definiteness."
+        ]
+      },
+      "resources": {
+        "youtube": "https://www.youtube.com/playlist?list=PLmXKhU9FNesQtnLpcZ6taF0XS9vHqIRiE",
+        "notes": "https://web.mit.edu/18.06/www/Spring17/18.06.pdf",
+        "question_papers": "https://drive.google.com/drive/folders/1v_6h9gPjQsp-7S3dKmRavZicpSbbIYtV",
+        "books": "https://archive.org/details/LinearAlgebraDoneRight3rdEdition",
+        "extra": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
+      }
+    },
+
+    {
+      "code": "CH111",
+      "title": "Chemistry I",
+      "credits": "3-1-0",
+      "modules": {
+        "Module I": [
+          "Atomic structure, wave mechanics, orbitals, quantum numbers."
+        ],
+        "Module II": [
+          "Periodic table trends, shielding, electronegativity."
+        ],
+        "Module III": [
+          "Basics of organic chemistry, electronic effects, types of reactions."
+        ],
+        "Module IV": [
+          "Ionic, covalent and metallic bonding, VSEPR, MO theory."
+        ],
+        "Module V": [
+          "Stereochemistry: optical and geometrical isomerism."
+        ]
+      },
+      "resources": {
+        "youtube": "https://www.youtube.com/playlist?list=PLLy_2iUCG87Bz6jzh3Cjs07-3LkRrEy5E",
+        "notes": "https://nptel.ac.in/courses/122101001",
+        "question_papers": "https://drive.google.com/drive/folders/1VJb6vAqkFgC7g9kT6S8FJgj03hSsdN5d",
+        "books": "https://archive.org/details/AtkinsPhysicalChemistry",
+        "extra": "https://chem.libretexts.org/"
+      }
+    },
+
+    {
+      "code": "CH112",
+      "title": "Chemistry I Lab",
+      "credits": "0-0-4",
+      "modules": [
+        "Titrimetric analysis, calibration, preparation of solutions.",
+        "Acid–base titrations, estimation of carbonate/hydroxide.",
+        "Crystallization using various solvents.",
+        "Melting point determination."
+      ],
+      "resources": {
+        "youtube": "https://www.youtube.com/playlist?list=PL9FuOtXibFjY0YG1lc3x_zjD0GfRec7qP",
+        "notes": "https://nptel.ac.in/courses/122103013",
+        "question_papers": "https://drive.google.com/drive/folders/1mZqrUQp4h1fB8f9N-9UnQ8ywqkQ4qQHp",
+        "extra": "https://www.chemguide.co.uk/"
+      }
+    },
+
+    {
+      "code": "MT132",
+      "title": "Communication Skill I",
+      "credits": "0-0-3",
+      "modules": [
+        "Grammar, vocabulary improvement",
+        "Public speaking",
+        "Group discussions",
+        "Professional writing"
+      ],
+      "resources": {
+        "youtube": "https://www.youtube.com/playlist?list=PLLy_2iUCG87A1u7C0R4-zH9N6KRu2-5wf",
+        "notes": "https://swayam.gov.in/nd1_noc20_hs08/preview",
+        "extra": "https://www.coursera.org/learn/academic-english"
+      }
+    },
+
+    {
+      "code": "VAC",
+      "title": "Value Added Course",
+      "credits": "1",
+      "options": ["NCC", "NSS", "PT & Games", "Creative Arts", "Entrepreneurship"],
+      "resources": {
+        "youtube": "https://www.youtube.com/results?search_query=ncc+training",
+        "extra": "https://nss.gov.in/"
+      }
+    }
+  ]
+}
